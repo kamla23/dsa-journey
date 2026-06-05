@@ -80,4 +80,4 @@ for(let i = 0; i < b.length; i++){
         smax2 = b[i];
     }
 }
-console.log(smax2);
+console.log(smax2); 
