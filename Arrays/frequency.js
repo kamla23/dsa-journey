@@ -17,7 +17,6 @@ let count = a.filter(num => num === b).length;
 console.log(count);
 
 //============for all element without method=================//
-
 let arrr = [1, 2, 2, 3, 1];
 let f = {};
 for(let i = 0; i < arrr.length; i++){
@@ -28,7 +27,7 @@ for(let i = 0; i < arrr.length; i++){
         f[n]++;
     }
 }
-console.log(f); 
+console.log(f);  
 
 //=============with forEach method =========================//
 let h = [1, 2, 2, 3, 1];
@@ -38,3 +37,4 @@ h.forEach((k =>{
 
 }));
 console.log(fre);
+
