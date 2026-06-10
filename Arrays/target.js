@@ -10,6 +10,7 @@
 // }
 // console.log(found);
 
+
 let arr = [2, 7, 11, 15];
 let t = 18;
 for (let i = 0; i < arr.length; i++) {
@@ -19,3 +20,11 @@ for (let i = 0; i < arr.length; i++) {
     }
   }
 }
+
+
+
+
+
+
+
+
