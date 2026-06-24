@@ -31,3 +31,23 @@ for (let k in f) {
     }
   }
 console.log(d);
+
+
+//============with flag====================//
+
+let n = [1, 2, 3, 2, 4, 1];
+
+for(let i = 0; i < n.length; i++){
+  let isDup = false;
+
+  for(let j = 0; j < i; j++){
+    if(n[i] === n[j]){
+      isDup = true;
+      break;
+    }
+  }
+  
+  if(isDup){
+    console.log(n[i])
+  }
+}
