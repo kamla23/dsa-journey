@@ -26,28 +26,61 @@ for (let num of b) {
 }
 
 for (let k in f) {
-    if (f[k] > 1) {
-      d.push(Number(k));
-    }
+  if (f[k] > 1) {
+    d.push(Number(k));
   }
+}
 console.log(d);
-
 
 //============with flag====================//
 
 let n = [1, 2, 3, 2, 4, 1];
 
-for(let i = 0; i < n.length; i++){
+for (let i = 0; i < n.length; i++) {
   let isDup = false;
 
-  for(let j = 0; j < i; j++){
-    if(n[i] === n[j]){
+  for (let j = 0; j < i; j++) {
+    if (n[i] === n[j]) {
       isDup = true;
       break;
     }
   }
-  
-  if(isDup){
-    console.log(n[i])
+
+  if (isDup) {
+    console.log(n[i]);
   }
 }
+
+//===============remove duplicate===================//
+let m = [1, 2, 2, 3, 4, 4];
+let l = [];
+
+for (let i = 0; i < m.length; i++) {
+  let isD = false;
+  for (let j = 0; j < l.length; j++) {
+    if (m[i] === l[j]) {
+      isD = true;
+      break;
+    }
+  }
+
+  if (!isD) {
+    l.push(m[i]);
+  }
+}
+console.log(l);
+
+//======== with Set method =============//
+
+let p = [1, 2, 2, 3, 4, 4];
+let r = [...new Set(p)];
+console.log(r);  
+
+//======with filter ==============//
+let Arr = [9, 8, 9, 7, 8, 6]
+
+let result = Arr.filter((item, index) => {
+  return Arr.indexOf(item) === index;
+});
+
+console.log(result);
