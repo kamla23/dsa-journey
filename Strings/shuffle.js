@@ -3,7 +3,6 @@
 function shuffle(s, indices) {
 //   let ans = [];
   let ans = new Array(s.length);
-
   for (let i = 0; i < s.length; i++) {
     ans[indices[i]] = s[i];
   }
@@ -15,7 +14,5 @@ function shuffle(s, indices) {
   return str;
 }
 console.log(shuffle("codeleet", [4, 5, 6, 7, 0, 2, 1, 3]));
-console.log(shuffle("acb", [0,2,1]));
-
-
+console.log(shuffle("acb", [0,2,1])); 
 
