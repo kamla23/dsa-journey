@@ -211,22 +211,78 @@
 
 //=====================  Perfect Number =========================== //
 
-function perfectNumber(num) {
+// function perfectNumber(num) {
+//   let i = 1;
+//   let sum = 0;
+//   while (i < num) {
+//     if (num % i === 0) {
+//       sum += i;
+//     }
+//     i++;
+//   }
+//   if (sum === num) {
+//     return "Perfect Number";
+//   } else {
+//     return "Not Perfect Number";
+//   }
+// }
+// console.log(perfectNumber(4));
+// console.log(perfectNumber(6));
+
+//============  Date - 07/09/2026 ===================//
+
+//===================  Prime Number =====================//
+
+// function primeNumber(n) {
+//   let num = 2;
+//   while (num <= n) {
+//     let i = 2;
+//     let isPrime = true;
+//     while (i < num) {
+//       if (num % i === 0) {
+//         isPrime = false;
+//         break;
+//       }
+//       i++;
+//     }
+//     if (isPrime) {
+//       console.log(num);
+//     }
+//     num++;
+//   }
+// }
+// primeNumber(100);
+
+//====================== check prime number or not ========================//
+
+// function primeNum(num){
+//   while(num < 2){
+//     return "not prime number";
+//   }
+//   let i = 2;
+//   while(i < num){
+//     if(num%i === 0){
+//       return "not prime number";
+//     }
+//     i++;
+//   }
+//   return "prime number";
+// }
+// console.log(primeNum(7));
+// console.log(primeNum(10));
+
+//================ fabonacci number seriese =====================//
+
+function fabonacci(num) {
+  let a = 0;
+  let b = 1;
   let i = 1;
-  let sum = 0;
-  while (i < num) {
-    if (num % i === 0) {
-      sum += i;
-    }
+  while (i <= num) {
+    console.log(a);
+    let t = a + b;
+    a = b;
+    b = t;
     i++;
   }
-  if (sum === num) {
-    return "Perfect Number";
-  } else {
-    return "Not Perfect Number";
-  }
 }
-console.log(perfectNumber(4));
-console.log(perfectNumber(6));
-
-//===================  
+fabonacci(7);
