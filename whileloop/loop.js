@@ -273,16 +273,72 @@
 
 //================ fabonacci number seriese =====================//
 
-function fabonacci(num) {
-  let a = 0;
-  let b = 1;
-  let i = 1;
-  while (i <= num) {
-    console.log(a);
-    let t = a + b;
-    a = b;
-    b = t;
+// function fabonacci(num) {
+//   let a = 0;
+//   let b = 1;
+//   let i = 1;
+//   while (i <= num) {
+//     console.log(a);
+//     let t = a + b;
+//     a = b;
+//     b = t;
+//     i++;
+//   }
+// }
+// fabonacci(7);
+
+// Date - 08/09/2026  //
+
+//============= Fabonacci Sum =================//
+
+// function fabonacciSum(num){
+//   let a = 0;
+//   let b = 1;
+//   let i = 1;
+//   let sum = 0;
+//   while(i <= num){
+//     sum += a;
+//     let t = a+b;
+//     a = b;
+//     b = t
+//     i++;
+//   }
+// return sum;
+// }
+// console.log(fabonacciSum(7));
+
+//======================== square number=======================//
+
+// function squareNumbers(n){
+//   let i = 1;
+//   while(i <= n){
+//     console.log(i*i);
+//     i++;
+//   }
+// }
+// squareNumbers(10)
+
+//================= cube number ===========================//
+
+// function cubeNumbers(n) {
+//   let i = 1;
+
+//   while (i <= n) {
+//     console.log(i * i * i);
+//     i++;
+//   }
+// }
+// cubeNumbers(5);
+
+//================= divisible by 7 ===================//
+
+function divisibleBy7(a, b) {
+  let i = a;
+  while (i <= b) {
+    if (i % 7 === 0) {
+      console.log(i);
+    }
     i++;
   }
 }
-fabonacci(7);
+divisibleBy7(10, 50); 
