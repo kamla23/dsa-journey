@@ -332,13 +332,75 @@
 
 //================= divisible by 7 ===================//
 
-function divisibleBy7(a, b) {
-  let i = a;
-  while (i <= b) {
-    if (i % 7 === 0) {
-      console.log(i);
+// function divisibleBy7(a, b) {
+//   let i = a;
+//   while (i <= b) {
+//     if (i % 7 === 0) {
+//       console.log(i);
+//     }
+//     i++;
+//   }
+// }
+// divisibleBy7(10, 50);
+
+//=================== print all factors =================//
+
+// function printFactors(n) {
+//   let i = 1;
+//   while (i <= n) {
+//     if (n % i === 0) {
+//       console.log(i);
+//     }
+//     i++;
+//   }
+// }
+// printFactors(12);
+
+//============= sum of all factors =====================//
+// function printFactors(n) {
+//   let i = 1;
+//   let sum = 0;
+//   while (i <= n) {
+//     if (n % i === 0) {
+//       sum +=i;
+//     }
+//     i++;
+//   }
+//   console.log(sum);
+// }
+// printFactors(12);
+
+//==================== HCF numbers =========================//
+
+// function findHCF(a, b) {
+//   let i = 1;
+//   let Hcf = 1;
+//   while (i <= a && i <= b) {
+//     if (a % i === 0 && b % i === 0) {
+//       Hcf = i;
+//     }
+//     i++;
+//   }
+//   return Hcf;
+// }
+// console.log(findHCF(12, 18));
+
+//================== LCM ====================//
+
+function findLCM(a, b) {
+  let i = 1;
+
+  if (a > b) {
+    i = a;
+  } else {
+    i = b;
+  }
+
+  while (true) {
+    if (i % a === 0 && i % b === 0) {
+      return i;
     }
     i++;
   }
 }
-divisibleBy7(10, 50); 
+console.log(findLCM(4, 6));
