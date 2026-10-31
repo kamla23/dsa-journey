@@ -9,7 +9,6 @@ function firstUniq(s){
                 count++;
             }
         }
-  
         if(count === 1){
             return s[i];
         }

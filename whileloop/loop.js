@@ -395,7 +395,6 @@ function findLCM(a, b) {
   } else {
     i = b;
   }
-
   while (true) {
     if (i % a === 0 && i % b === 0) {
       return i;

@@ -10,4 +10,3 @@ do {
 } while (num > 0);
 
 console.log("Number of Digits ", count);
-

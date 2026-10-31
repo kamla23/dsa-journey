@@ -1,3 +1,4 @@
+
 function multiplication(num) {
   let i = 1;
   do {
@@ -6,4 +7,7 @@ function multiplication(num) {
   } while (i <= 10);
 }
 multiplication(5);
+
+
+
 
